@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validasyonu</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <form id="myForm" action="servlet_url" method="POST" enctype="multipart/form-data">
+    <label for="name">Ad:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="surname">Soyad:</label>
+    <input type="text" id="surname" name="surname" required>
+    
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="password">Şifre:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="phone">Cep Telefonu:</label>
+    <input type="text" id="phone" name="phone" required>
+    
+    <label for="gender">Cinsiyet:</label>
+    <select id="gender" name="gender" required>
+      <option value="">Seçiniz</option>
+      <option value="male">Erkek</option>
+      <option value="female">Kadın</option>
+    </select>
+    
+    <label for="birthdate">Doğum Tarihi:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+    
+    <label for="profilePhoto">Profil Fotoğrafı:</label>
+    <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*" required>
+    
+    <input type="submit" value="Gönder">
+  </form>
+</body>
+</html>
